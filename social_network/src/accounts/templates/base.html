@@ -17,16 +17,16 @@
 </head>
 
 <body>
-  {% include "layouts/navbar.html" %}
+  {% comment %} {% include "layouts/navbar.html" %} {% endcomment %}
   {% if messages %}
-  {% include "layouts/alert.html" %}
+  {% comment %} {% include "layouts/alert.html" %} {% endcomment %}
   {% endif %}
   <div class="container my-5">
     {% block content %}
     <p class="lead">Contents not found...!</p>
     {% endblock content %}
   </div>
-  {% include "layouts/footer.html" %}
+  {% comment %} {% include "layouts/footer.html" %} {% endcomment %}
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

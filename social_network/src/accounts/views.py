@@ -14,7 +14,7 @@ User = get_user_model()
 class RegisterView(CreateView):
     model = User
     form_class = RegisterForm
-    template_name = '../register.html'
+    template_name = 'register.html'
     success_url = 'account/login'
 
     def form_valid(self,form):
@@ -29,7 +29,7 @@ class RegisterView(CreateView):
 # LOGIN VIEW
 class LoginView(View):
     form = LoginForm
-    template_name = '../login.html'
+    template_name = 'login.html'
     context = {}
 
     def get(self,request,*args,**kwargs):
